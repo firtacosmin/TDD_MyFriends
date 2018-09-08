@@ -1,19 +1,19 @@
 package com.economicvisma.tddmyfriends
 
 import android.support.v7.widget.RecyclerView
+import android.view.View
 import android.view.ViewGroup
 
 class FriendsRecViewAdapter : RecyclerView.Adapter<FriendsViewHolder>() {
 
-    override fun onCreateViewHolder(view: ViewGroup, position: Int): FriendsViewHolder {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun onCreateViewHolder(parent: ViewGroup, position: Int): FriendsViewHolder {
+        return FriendsViewHolder(View(parent.context))
     }
 
     override fun getItemCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return 3
     }
 
     override fun onBindViewHolder(holder: FriendsViewHolder, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

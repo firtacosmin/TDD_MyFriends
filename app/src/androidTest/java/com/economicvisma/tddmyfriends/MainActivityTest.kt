@@ -18,7 +18,7 @@ class MainActivityTest {
     @get:Rule
     public val mActivityRule: ActivityTestRule<MainActivity> = ActivityTestRule(MainActivity::class.java)
 
-    private val totalFriendCount = 10
+    private val totalFriendCount = 3
 
     @Before
     fun init() {
