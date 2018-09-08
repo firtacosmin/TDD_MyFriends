@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        friend_list.adapter = FriendsRecViewAdapter()
+        friend_list.adapter = FriendsRecViewAdapter(FriendsPresenter())
         friend_list.layoutManager = LinearLayoutManager(this)
     }
 }
