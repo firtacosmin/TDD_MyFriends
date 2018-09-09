@@ -21,5 +21,7 @@ class FriendsRecViewAdapter(
             holder.friendName = "Jon"
         else if ( position == 1)
             holder.friendName = "Marie"
+        else if ( position == 2 )
+            holder.friendName = "Martin"
     }
 }
