@@ -1,5 +1,6 @@
 package com.economicvisma.tddmyfriends
 
-class FriendsPresenter() {
-    val totalFriends: Int = 3
+class FriendsPresenter {
+    private val model: FriendsModel = FriendsModel()
+    var totalFriends: Int = model.friendsCount
 }
