@@ -41,10 +41,17 @@ class MainActivityTest {
     }
 
     @Test
-    fun scenario2_checkIfTheFriendsAreJonMarieMartin() {
+    fun scenario2_checkIfTheFriendOnPos0IsJon() {
         onView(withRecyclerView(R.id.friend_list).
             atPosition(0)).
             check(matches(hasDescendant(withText("Jon"))))
+    }
+
+    @Test
+    fun scenario2_checkIfTheFriendOnPos1IsMarie() {
+        onView(withRecyclerView(R.id.friend_list).
+            atPosition(1)).
+            check(matches(hasDescendant(withText("Marie"))))
     }
 
 }
