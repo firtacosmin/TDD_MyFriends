@@ -1,5 +1,8 @@
 package com.economicvisma.tddmyfriends
 
 class FriendsModel {
-    public var friendsCount: Int = 3
+    private val friends = listOf("Jon", "Cristine", "Martin")
+
+    val friendsCount: Int
+    get() = friends.size
 }
