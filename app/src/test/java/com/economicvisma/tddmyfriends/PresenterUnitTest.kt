@@ -43,4 +43,11 @@ class PresenterUnitTest {
         presenter.drawFriendAtPosition(viewHolder, 2)
         verify(viewHolder).friendName = "Martin"
     }
+    @Test
+    fun testGetFriendNameOnPos3() {
+        val presenter = FriendsPresenter()
+        val viewHolder: IFriendsViewHolder = mock()
+        presenter.drawFriendAtPosition(viewHolder, 3)
+        verify(viewHolder).friendName = "Martin"
+    }
 }

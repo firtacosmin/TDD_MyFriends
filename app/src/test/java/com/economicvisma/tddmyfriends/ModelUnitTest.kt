@@ -10,4 +10,9 @@ class ModelUnitTest {
     fun getTheTotalNumberOfFriends() {
         assertThat(FriendsModel().friendsCount, `is`(3))
     }
+
+    @Test
+    fun checkFriendOnPosition0() {
+        assertThat(FriendsModel().getFriends()[0], `is`("Jon"))
+    }
 }

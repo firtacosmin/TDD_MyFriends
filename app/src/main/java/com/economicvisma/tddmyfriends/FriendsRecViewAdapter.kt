@@ -17,11 +17,6 @@ class FriendsRecViewAdapter(
     }
 
     override fun onBindViewHolder(holder: FriendsViewHolder, position: Int) {
-        if ( position == 0 )
-            holder.friendName = "Jon"
-        else if ( position == 1)
-            holder.friendName = "Marie"
-        else if ( position == 2 )
-            holder.friendName = "Martin"
+        presenter.drawFriendAtPosition(holder, position)
     }
 }

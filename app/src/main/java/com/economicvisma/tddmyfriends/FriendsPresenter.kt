@@ -9,10 +9,6 @@ class FriendsPresenter {
         viewHolder: IFriendsViewHolder,
         position: Int
     ) {
-        if ( position == 0 )
-            viewHolder.friendName = "Jon"
-        else if ( position == 1 )
-            viewHolder.friendName = "Marie"
-        else viewHolder.friendName = "Martin"
+        viewHolder.friendName = model.getFriends()[position]
     }
 }
